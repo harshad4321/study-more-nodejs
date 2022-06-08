@@ -6,10 +6,14 @@ const Token = require("./middleware/token")
 const validaction = require("./middleware/validation");
 
 app.use(DateGenerator);
+app.use(express.static("view"))
 
 const middleware= [Token,validaction];
 
+app.post("/login",(req,res)=>{
 
+    
+})
 app.get("/profile",middleware,(req,res)=>{ 
     console.log("user is logged")
      res.send("<h1>success..</h1>");   
