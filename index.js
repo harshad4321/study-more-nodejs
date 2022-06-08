@@ -1,7 +1,9 @@
 const http =require ('http');
 const fs = require("fs");
 const path = require("path");
-
+const { loggers,myname} = require('./utils');
+console .log("2*5=", loggers()); 
+console.log(myname)
 
 
  const server=http.createServer((req,res)=>{
