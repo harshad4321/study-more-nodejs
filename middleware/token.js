@@ -1,5 +1,5 @@
 
-function Token(req,res,next){
+module.exports= function (req,res,next){
     console.log("created tocken");
     setInterval(()=>{
         const Token= "123"
@@ -7,4 +7,3 @@ function Token(req,res,next){
          next();
     });
 }
-module.exports=Token;

@@ -2,7 +2,7 @@
 
 function validaction (req,res,next){
     if(req.token){
-    console.log(" tocken  approved")
+    console.log(" tocken  Approved")
      next(); 
      return;
     }
